@@ -1,17 +1,3 @@
-/**
-
-
- Copyright (C) 2025.
- Licensed under the  GPL-3.0 License;
- You may not sell this script.
- It is supplied in the hope that it may be useful.
- * @project_name : Free Bot script
- * @author : Malvin King <https://github.com/kingmalvn>
- * @description : A Multi-functional whatsapp bot script.
- * @version 3.0.0
- **/
-
-
 const fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
 
@@ -20,10 +6,10 @@ function convertToBool(text, fault = 'true') {
 }
 
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || "nFBEgLSb#htrRXt3xUHpMhBK7hctriTVg_aibpocKdjbeaqjwEt8 FDe3Y030H4",
+    SESSION_ID: process.env.SESSION_ID || "suho~7RlHlSTT#WdJg5kL4mLQQXD22ZrixMPVdwwen73u-e3tv_goDP3k FDe3Y030H4",
     AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
     MODE: process.env.MODE || "public",
-    AUTO_VOICE: process.env.AUTO_VOICE || "false",
+    AUTO_VOICE: process.env.AUTO_VOICE || "true",
     AUTO_STICKER: process.env.AUTO_STICKER || "true",
     AUTO_REPLY: process.env.AUTO_REPLY || "true",
     ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/5akkt2.png",
