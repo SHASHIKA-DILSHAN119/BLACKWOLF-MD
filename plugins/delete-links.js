@@ -1,4 +1,4 @@
-const config = require('../settings');
+const config = require('../config');
 const fs = require('fs');
 const path = require('path');
 
@@ -10,7 +10,7 @@ const saveWarnings = () => {
 };
 
 // Dummy lite function to replace missing '../lite' module
-function lite(options, handler) {
+function cmd(options, handler) {
   // Placeholder to prevent crashes
   // Integrate with your bot's event system if needed
 }
@@ -30,7 +30,7 @@ const linkPatterns = [
   /https?:\/\/(?:www\.)?discord\.com\/\S+/gi
 ];
 
-lite({
+cmd({
   on: 'body'
 }, async (conn, m, store, {
   from,
