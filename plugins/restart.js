@@ -1,7 +1,7 @@
-const { lite } = require("../lite");  
+const { cmd } = require("../command");  
 const { sleep } = require("../lib/functions");  
 
-lite({  
+cmd({  
     pattern: "restart",  
     desc: "Restart Lite xd",  
     category: "owner",  
